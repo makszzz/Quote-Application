@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  /* margin: 80px; */
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+  color: #000000;
+  /* background-color: #000000; */
+  background-image: url("https://images.unsplash.com/photo-1471286274405-579f8d7132d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+  background-position: center;
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  background-attachment: fixed;
+}
+
+h1 {
+  text-align: center;
+  color: #000000;
+}
+
+#quoteInput {
+  width: 300px;
+  padding: 12px;
+  justify-content: center;
+  margin-left: 80px;
+  font-size: large;
+  border-radius: 20px;
+  border: 1px solid #182918;
+}
+
+#quoteList {
+  /* list-style: none; */
+  padding: 20;
+  margin-left: 200px;
+  margin-right: 200px;
+  font-size: larger;
+  text-transform: capitalize;
+}
+
+#quoteList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #21195c;
+}
+
+#quoteList li:last-child {
+  border-bottom: none;
+}
+
+#quoteList li button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#quoteList li button:hover {
+  background-color: #c82333;
+}
+
+button {
+  position: relative;
+  width: 140px;
+  padding: 15px 0;
+  margin: 20px 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid #182918;
+  background: transparent;
+  color: #347d31;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 20px;
+}
+span {
+  background: #8ebe5a;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+  border-radius: 20px;
+}
+button:hover span {
+  width: 100%;
+}
+
+.quote-container {
+  text-align: center;
+  justify-content: center;
+}
